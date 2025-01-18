@@ -7,3 +7,150 @@
   font-weight: 400px;
   font-style: normal;
 }
+
+
+/* shared styles */
+.display_flex {
+  display: flex;
+}
+
+/*  dark 02 */
+.text_gray{
+  color: #424242;
+}
+
+/* dark 03 */
+.text_light_gray{
+  color: #727272;
+}
+
+.bg_light{
+  background-color:rgba(255, 144, 14, 0.1);
+}
+
+.btn_primary{
+  color: white;
+  background-color: #FF900E;
+  width: 180px;
+  height: 4rem;
+  font-weight: 600px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  padding: 20px 25px;
+  /* border: 1px solid white; */
+  border: none;
+}
+
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main > section{
+  margin-top: 130px;
+}
+
+
+/* main styles */
+.teams{
+  /* margin-top: 50px; */
+  align-items: center;
+}
+
+.team_image_container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+}
+
+.our_features{
+  margin: 0 auto;
+  max-width: 540px;
+  text-align: left;
+  align-items: center;
+
+}
+
+.section_title{
+  font-size: 2.8rem;
+}
+
+#quick_list{
+  font-weight: 500px;
+}
+
+.feature{
+  color: #FF900E;
+}
+/* navbar related styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .nav_links{
+  align-items: center;
+} */
+
+.brand{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.nav_item {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav_link {
+  text-decoration: none;
+  font-weight: 500px;
+}
+
+.navbar, .banner, main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* banner styles */
+.banner_content{
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner_title{
+  font-weight: 700px;
+  font-size: 4rem;
+}
+
+.banner_image{
+  width: 100%;
+}
+
+/* responsive media query */
+
+@media screen and (max-width:576px) {
+  .navbar, 
+  .navlinks,
+  .teams
+  {
+    flex-direction: column;
+  }
+  .team_image_container{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .our_features{
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+  .teams{
+    flex-direction: column;
+  }  
+  .our_features{
+    margin: 50px auto;
+  }
+}
